@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <title>Make It Rain $$$</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="coinSortnWrap">
+                <h1>Coin Sorter & Wrapper</h1>
+
+                <label>Pennies: <input type="number" id="pennies" value="0"></label><br>
+                <label>Nickels: <input type="number" id="nickels" value="0"></label><br>
+                <label>Dimes: <input type="number" id="dimes" value="0"></label><br>
+                <label>Quarters: <input type="number" id="quarters" value="0"></label><br>
+
+                <button onclick="sortCoins()">Sort Your Coins!</button>
+
+                <div id="results"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/JavaScript" src="./JS/app.js"></script>
+</html>
