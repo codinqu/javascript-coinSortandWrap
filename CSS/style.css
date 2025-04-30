@@ -10,6 +10,10 @@ input {
     padding: 5px;
 }
 
+label {
+    padding: 17px;
+}
+
 button {
     padding: 10px;
     background-color: #a178e3;
@@ -17,6 +21,8 @@ button {
     border: none;
     cursor: pointer;
 }
+
+
 
 #results {
     margin-top: 20px;

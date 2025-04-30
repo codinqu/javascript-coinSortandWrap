@@ -20,7 +20,7 @@ function sortCoins() {
         dime: 50,
         quarter: 40
     };
-    //
+    // how many each wrap / roll can contain
 
     const total = (
         pennies * values.penny +
@@ -28,7 +28,7 @@ function sortCoins() {
         dimes * values.dime +
         quarters *values.quarter
     ).toFixed(2);
-    //
+    // .toFixed(2) setting it at two decimal places 
 
     const rolls = {
         penny: Math.floor(pennies / capacities.penny),
@@ -36,7 +36,7 @@ function sortCoins() {
         dime: Math.floor(dimes / capacities.dime),
         quarter: Math.floor(quarters / capacities.quarter)
     };
-    //
+    // figuring out how many rolls you will need 
 
     const leftovers = {
         penny: pennies % capacities.penny,
@@ -44,7 +44,7 @@ function sortCoins() {
         dime: dimes % capacities.dime,
         quarter: quarters % capacities.quarter
     };
-    //
+    // leftovers that did not make it into the rolls 
 
     const resultText = `
     <h2>Sorting Complete!</h2>
